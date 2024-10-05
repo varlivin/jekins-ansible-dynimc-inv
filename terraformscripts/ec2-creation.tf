@@ -1,12 +1,12 @@
 provider "aws"{
-region = "ap-south-1"
+region = "us-east-1"
 }
 
 resource "aws_instance" "AWS_EC2INSTANCE"{
-ami = "ami-078264b8ba71bc45e" 
+ami = "ami-0fff1b9a61dec8a5f" 
 instance_type = "t2.micro"
 key_name = "livindevops"
-security_groups = ["default"]
+security_groups = ["launch-wizard-3"]
 tags = {
 Name = "terraformnew1"
 }
